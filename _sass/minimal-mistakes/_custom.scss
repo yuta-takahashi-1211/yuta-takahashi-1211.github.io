@@ -24,3 +24,9 @@ html, body {
   background-color: gainsboro !important;
   border: none !important;
 }
+
+/* フッター全体を gainsboro に統一 */
+.page__footer {
+  background-color: gainsboro !important;
+  border-top: 1px solid gainsboro !important; /* ← 白線を gainsboro に上書き */
+}
