@@ -4,7 +4,6 @@ title: ""
 permalink: /research/
 author_profile: true
 ---
-
 ## Published Paper:
 - ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
 
