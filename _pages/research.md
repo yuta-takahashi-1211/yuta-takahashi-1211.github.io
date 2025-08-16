@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## Published Paper: Click on the Titles to Access the PDFs
-- ["Universal Gravity"]( # ) — *Journal of Political Economy* (2020), with [Treb Allen](#) and [Costas Arkolakis](#)
+- ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
 
 ---
 
