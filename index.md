@@ -2,11 +2,6 @@
 layout: single
 title: ""
 author_profile: true
-author:
-  name: "Yuta Takahashi"
-  avatar: "/assets/images/IMG_0156_edited.jpg"
-  bio: "Macroeconomics"
-  location: "Osaka, Japan"
 ---
 # Hello!
 
