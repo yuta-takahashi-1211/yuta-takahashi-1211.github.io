@@ -15,8 +15,10 @@ author_profile: true
 - ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/) *(submitted)*
 - ["Hidden Stagflation"](https://www.dropbox.com/home/bad_inflation/web) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Anchoring Inflation Expectation"](https://www.dropbox.com/scl/fo/0kf9p5ntgox4cynbx0fvl/AD68Qi_jBnwbvUYGORn6MPM?rlkey=anx7yq9axeve92rwpc908hps5&dl=0) (2020), with Lawrence Christiano
-- ["Robustly Optimal Voting Rule"](https://www.dropbox.com/home/SuccessiveVoting/web?share_manage_access=false) (2024), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home) *(Revise and Resubmit at Journal of Economic Theory)*
-- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) *(Revise and Resubmitted, 2nd round, at Experimental Economics)*
+- ["Robustly Optimal Voting Rule"](https://www.dropbox.com/home/SuccessiveVoting/web?share_manage_access=false) (2024), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home)
+  *(Revise and Resubmit at Journal of Economic Theory)*
+- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home)
+  *(Revise and Resubmitted, 2nd round, at Experimental Economics)*
 
 ---
 
