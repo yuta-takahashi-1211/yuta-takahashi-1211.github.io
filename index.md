@@ -9,6 +9,10 @@ author:
   location: "Osaka, Japan"
 ---
 
+<p>page.author.avatar = {{ page.author.avatar | inspect }}</p>
+<p>site.author.avatar = {{ site.author.avatar | inspect }}</p>
+<p>site.owner.avatar = {{ site.owner.avatar | inspect }}</p>
+
 # Hello!
 
 I’ll be starting as an Associate Professor (without tenure) at the Institute of Social and Economic Research, the University of Osaka, this September.
