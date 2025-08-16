@@ -49,3 +49,65 @@ footer.page__footer,  /* Minimal Mistakes 系 */
 footer {
   display: none !important;
 }
+
+/* === overrides (last): 背景を gainsboro に統一 === */
+
+/* 全体背景 */
+html, body {
+  background-color: gainsboro !important;
+}
+
+/* 本文の白ボックスもグレーに（完全単色に） */
+.page,
+.page__content,
+.archive {
+  background-color: gainsboro !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ヘッダー帯（内側まで上書き）*/
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav * {
+  background-color: gainsboro !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* （参考）フッター帯を使う場合は色を合わせる
+.page__footer,
+.page__footer *,
+.page__footer-follow,
+.page__footer-copyright {
+  background-color: gainsboro !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+*/
+
+/* ダークモード環境でも固定 */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: gainsboro !important;
+  }
+  .masthead,
+  .masthead__inner-wrap,
+  .greedy-nav,
+  .greedy-nav * {
+    background-color: gainsboro !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  /* フッターを使う場合は下も同様に
+  .page__footer,
+  .page__footer *,
+  .page__footer-follow,
+  .page__footer-copyright {
+    background-color: gainsboro !important;
+    border-top: none !important;
+    box-shadow: none !important;
+  }
+  */
+}
