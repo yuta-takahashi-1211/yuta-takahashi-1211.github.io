@@ -14,10 +14,6 @@ author:
   bio: "Macroecnomics"
   location: "Osaka, Japan"
   links:
-    - label: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=<YOUR_ID>"
-    - label: "ORCID"
-      url: "https://orcid.org/<YOUR_ORCID>"
     - label: "Email"
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
 
