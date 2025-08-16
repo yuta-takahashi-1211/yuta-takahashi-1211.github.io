@@ -1,32 +1,45 @@
-/* 全体背景 */
+/* 全体 */
 html, body {
   background-color: gainsboro !important;
 }
 
-/* ページ本文の枠も gainsboro に統一 */
-.page,
-.page__content,
-.archive {
-  background-color: gainsboro !important;
-  box-shadow: none; /* デフォの影を消したい場合 */
-}
-
-/* ヘッダー（ナビ部分） */
+/* ヘッダー帯（ナビの内側まで強制上書き）*/
 .masthead,
 .masthead__inner-wrap,
-.masthead__menu {
+.greedy-nav,
+.greedy-nav * {
   background-color: gainsboro !important;
+  box-shadow: none !important;
   border: none !important;
 }
 
-/* フッター */
-.page__footer {
+/* フッター帯（内側まで含めて統一）*/
+.page__footer,
+.page__footer *,
+.page__footer-follow,
+.page__footer-follow *,
+.page__footer-copyright,
+.page__footer-copyright * {
   background-color: gainsboro !important;
-  border: none !important;
+  border-top: 0 !important;
+  box-shadow: none !important;
 }
 
-/* フッター全体を gainsboro に統一 */
-.page__footer {
-  background-color: gainsboro !important;
-  border-top: 1px solid gainsboro !important; /* ← 白線を gainsboro に上書き */
+/* ダークモードを使っている端末でも同じ色で固定 */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: gainsboro !important;
+  }
+  .masthead,
+  .masthead__inner-wrap,
+  .greedy-nav,
+  .greedy-nav *,
+  .page__footer,
+  .page__footer *,
+  .page__footer-follow,
+  .page__footer-copyright {
+    background-color: gainsboro !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
 }
