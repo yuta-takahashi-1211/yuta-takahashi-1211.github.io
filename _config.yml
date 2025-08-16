@@ -7,6 +7,7 @@ last_updated: "2025/08/16"
 
 url: "https://yuta-takahashi-1211.github.io"
 repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
+# baseurl はユーザーサイトでは空/未指定が正解（指定しない）
 
 # 著者情報（テーマが参照するキー）
 author:
@@ -18,7 +19,7 @@ author:
     - label: "Email"
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
 
-# 互換性のため owner も定義（古いテーマが参照する場合あり）
+# 互換性のため owner も定義（派生レイアウト対策）
 owner:
   name: "Yuta Takahashi"
   avatar: "/assets/images/IMG_0156_edited.jpg"
@@ -32,11 +33,13 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-remote-theme
+  # sitemap / feed は入れていない（フッターに出したくないため）
 
-# _pages ディレクトリを使うために明示
+# _pages ディレクトリを使う
 include:
   - _pages
 
+# _pages 配下の既定設定
 defaults:
   - scope:
       path: "_pages"
@@ -44,3 +47,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Sass（カスタムCSSを効かせるため）
+sass:
+  style: compressed
+
+# フッターのリンクを空に（Sitemap, Feed を非表示）
+footer:
+  links: []
