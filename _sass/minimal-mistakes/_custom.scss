@@ -6,3 +6,14 @@
 .page__footer {
   display: none !important;
 }
+
+
+/* 背景：確実に上書き */
+html, body {
+  background-color: gainsboro !important;
+}
+
+/* （任意）本文カードまでグレーにするなら */
+.page, .page__content, .archive {
+  background-color: gainsboro !important;
+}
