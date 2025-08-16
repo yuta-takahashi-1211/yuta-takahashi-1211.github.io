@@ -41,3 +41,12 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+/* フッターを完全に非表示（マークアップは残る） */
+footer.page__footer,  /* Minimal Mistakes 系 */
+.page__footer,
+.site-footer,         /* al-folio / 他 */
+footer {
+  display: none !important;
+}
