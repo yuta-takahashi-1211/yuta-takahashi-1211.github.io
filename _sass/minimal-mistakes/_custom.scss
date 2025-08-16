@@ -1,19 +1,26 @@
-.author__avatar img {
-  max-width: 200px;   /* 幅を200pxに制限 */
-  border-radius: 50%; /* 丸く切り抜きたい場合 */
-}
-
-.page__footer {
-  display: none !important;
-}
-
-
-/* 背景：確実に上書き */
+/* 全体背景 */
 html, body {
   background-color: gainsboro !important;
 }
 
-/* （任意）本文カードまでグレーにするなら */
-.page, .page__content, .archive {
+/* ページ本文の枠も gainsboro に統一 */
+.page,
+.page__content,
+.archive {
   background-color: gainsboro !important;
+  box-shadow: none; /* デフォの影を消したい場合 */
+}
+
+/* ヘッダー（ナビ部分） */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu {
+  background-color: gainsboro !important;
+  border: none !important;
+}
+
+/* フッター */
+.page__footer {
+  background-color: gainsboro !important;
+  border: none !important;
 }
