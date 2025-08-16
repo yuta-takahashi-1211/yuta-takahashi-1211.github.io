@@ -24,7 +24,9 @@ author:
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
 
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
   - jekyll-paginate
+  - jekyll-remote-theme
+
