@@ -5,18 +5,18 @@ permalink: /research/
 author_profile: true
 ---
 
-## Published Paper: Click on the Titles to Access the PDFs
+## Published Paper:
 - ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
 
 ---
 
-## Working Papers: Click on the Titles and the Names to Access the PDFs and the Personal Websites, if any
-- ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"]( # ) (2024), with [Naoki Takayama](#)
-- ["Global Technology Stagnation"]( # ) (2024), with [Naoki Takayama](#) *(submitted)*
-- ["Hidden Stagflation"]( # ) (2024), with [Naoki Takayama](#)
-- ["Anchoring Inflation Expectation"]( # ) (2020), with [Lawrence Christiano](#)
-- ["Robustly Optimal Voting Rule"]( # ) (2024), with [Noriaki Kiguchi](#) and [Shinpei Noguchi](#) *(Revise and Resubmit at Journal of Economic Theory)*
-- ["An Experiment on a Multi-Period Beauty Contest Game"]( # ) (2024), with [Nobuyuki Hanaki](#) *(Revise and Resubmitted, 2nd round, at Experimental Economics)*
+## Working Papers:
+- ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"](https://www.dropbox.com/scl/fo/03hun5pxioram7n6te16p/AP5nKTLL343b3KRFzU191-g?rlkey=8hu4n5kn9h8p80z20teyjeq23&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
+- ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/) *(submitted)*
+- ["Hidden Stagflation"](https://www.dropbox.com/home/bad_inflation/web) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
+- ["Anchoring Inflation Expectation"](https://www.dropbox.com/scl/fo/0kf9p5ntgox4cynbx0fvl/AD68Qi_jBnwbvUYGORn6MPM?rlkey=anx7yq9axeve92rwpc908hps5&dl=0) (2020), with Lawrence Christiano
+- ["Robustly Optimal Voting Rule"](https://www.dropbox.com/home/SuccessiveVoting/web?share_manage_access=false) (2024), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home) *(Revise and Resubmit at Journal of Economic Theory)*
+- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) *(Revise and Resubmitted, 2nd round, at Experimental Economics)*
 
 ---
 
