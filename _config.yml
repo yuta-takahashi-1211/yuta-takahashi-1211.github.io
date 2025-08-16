@@ -13,7 +13,7 @@ repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 # 著者情報（テーマが参照するキー）
 author:
   name: "Yuta Takahashi"
-  avatar: "/assets/images/IMG_0156_edited.jpg"
+  avatar: "https://yuta-takahashi-1211.github.io/assets/images/IMG_0156_edited.jpg"
   bio: "Macroeconomics"
   location: "Osaka, Japan"
   links:
