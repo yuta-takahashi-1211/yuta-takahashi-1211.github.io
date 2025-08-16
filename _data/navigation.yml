@@ -1,7 +1,5 @@
 main:
-  - title: "Publications"
-    url: /publications/
-  - title: "Works"
-    url: /works/
   - title: "CV"
     url: https://docs.google.com/document/d/1MIJ5BFvFsEKeQ2HUYtvSxfnrC6bw_DGBwiG1rZ2ccBM/edit?usp=sharing
+  - title: "Research"
+    url: /research/    
