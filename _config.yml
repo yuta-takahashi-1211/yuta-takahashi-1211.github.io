@@ -11,15 +11,13 @@ repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 author:
   name: "Yuta Takahashi"
   avatar: "/images/IMG_0156_edited.jpg"
-  bio: "Fiscal policy, inflation, Japanese macroeconomic history"
+  bio: "Macroecnomics"
   location: "Osaka, Japan"
   links:
     - label: "Google Scholar"
       url: "https://scholar.google.com/citations?user=<YOUR_ID>"
     - label: "ORCID"
       url: "https://orcid.org/<YOUR_ORCID>"
-    - label: "GitHub"
-      url: "https://github.com/yuta-takahashi-1211"
     - label: "Email"
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
 
