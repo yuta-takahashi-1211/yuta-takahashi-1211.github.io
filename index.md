@@ -1,3 +1,4 @@
+<img src="/assets/images/IMG_0156_edited.jpg" alt="Yuta Takahashi" width="220">
 ---
 layout: single
 title: "Yuta Takahashi"
