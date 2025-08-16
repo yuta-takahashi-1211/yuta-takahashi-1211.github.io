@@ -8,6 +8,7 @@ last_updated: "2025/08/16"
 url: "https://yuta-takahashi-1211.github.io"
 repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 
+# 著者情報（テーマが参照するキー）
 author:
   name: "Yuta Takahashi"
   avatar: "/assets/images/IMG_0156_edited.jpg"
@@ -17,14 +18,22 @@ author:
     - label: "Email"
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
 
+# 互換性のため owner も定義（古いテーマが参照する場合あり）
+owner:
+  name: "Yuta Takahashi"
+  avatar: "/assets/images/IMG_0156_edited.jpg"
+  bio: "Macroeconomics"
+  location: "Osaka, Japan"
+
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-remote-theme
 
-# 👇 この部分を追加
+# _pages ディレクトリを使うために明示
 include:
   - _pages
 
