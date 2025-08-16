@@ -1,4 +1,3 @@
-{% include author-profile.html %}
 ---
 layout: single
 title: "Yuta Takahashi"
