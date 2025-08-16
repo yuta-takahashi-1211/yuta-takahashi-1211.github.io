@@ -11,7 +11,7 @@ repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 author:
   name: "Yuta Takahashi"
   avatar: "/assets/images/IMG_0156_edited.jpg"
-  bio: "Macroecnomics"
+  bio: "Macroeconomics"
   location: "Osaka, Japan"
   links:
     - label: "Email"
@@ -24,3 +24,14 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
 
+# 👇 この部分を追加
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
