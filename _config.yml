@@ -6,6 +6,7 @@ address: "6-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan"
 last_updated: "2025/08/16"
 
 url: "https://yuta-takahashi-1211.github.io"
+baseurl: ""   # ← 追加
 repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 # baseurl はユーザーサイトでは空/未指定が正解（指定しない）
 
