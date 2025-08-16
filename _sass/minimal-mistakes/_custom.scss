@@ -1,1 +1,34 @@
+/* 全体の背景を gainsboro に */
+html, body {
+  background-color: gainsboro !important;
+}
+
+/* 本文部分（デフォルトで白いカード状）も gainsboro に */
+.page,
+.page__content,
+.archive {
+  background-color: gainsboro !important;
+  box-shadow: none !important; /* カードの影を消したい場合 */
+  border: none !important;
+}
+
+/* ヘッダー帯（ナビ部分） */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav * {
+  background-color: gainsboro !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* フッター帯 */
+.page__footer,
+.page__footer *,
+.page__footer-follow,
+.page__footer-copyright {
+  background-color: gainsboro !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
 
