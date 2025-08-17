@@ -56,3 +56,6 @@ sass:
 # フッターのリンクを空に（Sitemap, Feed を非表示）
 footer:
   links: []
+
+minimal_mistakes_skin: "air" 
+# 他に: "plum" "mint" "sunrise" "aqua" など
