@@ -18,3 +18,21 @@ h1, h2, h3, .page__title, .archive__item-title { font-family: var(--heading-font
 
 /* カード感を薄く（フラットで今っぽく） */
 .page, .archive { box-shadow: none; background: #fff; }
+
+
+/* 本文コンテナの最大幅を広げる */
+.page {
+  max-width: 1000px;   /* デフォルト ~800px → 1000px に拡張 */
+  margin: 0 auto;      /* 中央寄せを維持 */
+}
+
+/* ヘッダーや本文コンテンツの幅も揃える */
+.page__content {
+  max-width: 1000px;
+}
+
+/* プロフィールサイドバー付きレイアウトの場合に余裕を確保 */
+.layout--single .page__content,
+.layout--archive .page__content {
+  max-width: 1000px;
+}
