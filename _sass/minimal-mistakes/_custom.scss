@@ -86,3 +86,17 @@ footer.page__footer,
 footer {
   display: none !important;
 }
+
+
+/* === サイドバーのフォントを本文と統一 === */
+.sidebar,
+.sidebar * ,
+.h-card,
+.h-card * ,
+.author__content,
+.author__bio,
+.author__urls,
+.author__urls a,
+.taxonomy__index a {
+  font-family: var(--body-font) !important;
+}
