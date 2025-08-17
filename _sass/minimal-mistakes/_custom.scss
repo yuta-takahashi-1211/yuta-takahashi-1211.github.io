@@ -2,46 +2,6 @@
    Custom overrides for Minimal Mistakes
    =============================== */
 
-/* --- フォント設定 --- */
-:root {
-  --body-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  --heading-font: "Lora", Georgia, serif;
-}
-
-/* 本文と見出し */
-html, body {
-  font-family: var(--body-font);
-}
-h1, h2, h3, .page__title, .archive__item-title {
-  font-family: var(--heading-font);
-}
-
-/* --- ナビゲーション（タブ）のフォント統一 --- */
-.masthead,
-.masthead__inner-wrap,
-.site-title,
-.site-subtitle,
-.greedy-nav,
-.greedy-nav a,
-.greedy-nav .visible-links a,
-.greedy-nav .hidden-links a,
-.greedy-nav .menu-button {
-  font-family: var(--body-font) !important;
-  font-weight: 600;
-}
-
-/* --- サイドバーのフォント統一 --- */
-.sidebar,
-.sidebar .author__content,
-.sidebar .author__bio,
-.sidebar .author__urls a,
-.sidebar .taxonomy__index a {
-  font-family: var(--body-font) !important;
-}
-.author__name {
-  font-family: var(--heading-font) !important;
-  font-weight: 600;
-}
 
 /* --- 本文の幅調整 --- */
 .page {
@@ -88,15 +48,3 @@ footer {
 }
 
 
-/* === サイドバーのフォントを本文と統一 === */
-.sidebar,
-.sidebar * ,
-.h-card,
-.h-card * ,
-.author__content,
-.author__bio,
-.author__urls,
-.author__urls a,
-.taxonomy__index a {
-  font-family: var(--body-font) !important;
-}
