@@ -1,38 +1,88 @@
-/* フォント適用 */
-html, body { font-family: var(--body-font); }
-h1, h2, h3, .page__title, .archive__item-title { font-family: var(--heading-font); }
+/* ===============================
+   Custom overrides for Minimal Mistakes
+   =============================== */
 
-/* 余白と行間を少し広げて読みやすく */
-.page, .page__content { line-height: 1.75; }
-.page__content p { margin: 0.7em 0; }
-
-/* リンクをやさしく、ホバーで下線 */
-.page__content a { text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.15); }
-.page__content a:hover { border-bottom-color: currentColor; }
-
-/* プロフィール画像を整える（サイズと丸み） */
-.author__avatar img { max-width: 180px; border-radius: 50%; }
-
-/* ヘッダの余白・影を少し軽く */
-.masthead { box-shadow: none; border-bottom: 1px solid rgba(0,0,0,.06); }
-
-/* カード感を薄く（フラットで今っぽく） */
-.page, .archive { box-shadow: none; background: #fff; }
-
-
-/* 本文コンテナの最大幅を広げる */
-.page {
-  max-width: 1000px;   /* デフォルト ~800px → 1000px に拡張 */
-  margin: 0 auto;      /* 中央寄せを維持 */
+/* --- フォント設定 --- */
+:root {
+  --body-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --heading-font: "Lora", Georgia, serif;
 }
 
-/* ヘッダーや本文コンテンツの幅も揃える */
+/* 本文と見出し */
+html, body {
+  font-family: var(--body-font);
+}
+h1, h2, h3, .page__title, .archive__item-title {
+  font-family: var(--heading-font);
+}
+
+/* --- ナビゲーション（タブ）のフォント統一 --- */
+.masthead,
+.masthead__inner-wrap,
+.site-title,
+.site-subtitle,
+.greedy-nav,
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a,
+.greedy-nav .menu-button {
+  font-family: var(--body-font) !important;
+  font-weight: 600;
+}
+
+/* --- サイドバーのフォント統一 --- */
+.sidebar,
+.sidebar .author__content,
+.sidebar .author__bio,
+.sidebar .author__urls a,
+.sidebar .taxonomy__index a {
+  font-family: var(--body-font) !important;
+}
+.author__name {
+  font-family: var(--heading-font) !important;
+  font-weight: 600;
+}
+
+/* --- 本文の幅調整 --- */
+.page {
+  max-width: 1000px;  /* デフォルト ~800px → 少し広めに */
+  margin: 0 auto;
+}
 .page__content {
   max-width: 1000px;
 }
-
-/* プロフィールサイドバー付きレイアウトの場合に余裕を確保 */
 .layout--single .page__content,
 .layout--archive .page__content {
   max-width: 1000px;
+}
+
+/* --- プロフィール画像の調整 --- */
+.author__avatar img {
+  max-width: 180px;   /* 写真の大きさ */
+  border-radius: 50%; /* 丸く切り抜き */
+}
+
+/* --- リンクの装飾を少しおしゃれに --- */
+.page__content a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.page__content a:hover {
+  border-bottom-color: currentColor;
+}
+
+/* --- 余白・行間 --- */
+.page, .page__content {
+  line-height: 1.75;
+}
+.page__content p {
+  margin: 0.7em 0;
+}
+
+/* --- フッター削除（不要な場合） --- */
+footer.page__footer,
+.page__footer,
+.site-footer,
+footer {
+  display: none !important;
 }
