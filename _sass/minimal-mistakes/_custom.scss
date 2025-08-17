@@ -45,15 +45,15 @@ h1, h2, h3, .page__title, .archive__item-title {
 
 /* --- 本文の幅調整 --- */
 .page {
-  max-width: 1000px;  /* デフォルト ~800px → 少し広めに */
+  max-width: 1100px;  /* ← 1100pxに拡大 */
   margin: 0 auto;
 }
 .page__content {
-  max-width: 1000px;
+  max-width: 1100px;
 }
 .layout--single .page__content,
 .layout--archive .page__content {
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 /* --- プロフィール画像の調整 --- */
