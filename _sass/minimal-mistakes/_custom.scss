@@ -1,34 +1,20 @@
-/* 全体の背景を gainsboro に */
-html, body {
-  background-color: gainsboro !important;
-}
+/* フォント適用 */
+html, body { font-family: var(--body-font); }
+h1, h2, h3, .page__title, .archive__item-title { font-family: var(--heading-font); }
 
-/* 本文部分（デフォルトで白いカード状）も gainsboro に */
-.page,
-.page__content,
-.archive {
-  background-color: gainsboro !important;
-  box-shadow: none !important; /* カードの影を消したい場合 */
-  border: none !important;
-}
+/* 余白と行間を少し広げて読みやすく */
+.page, .page__content { line-height: 1.75; }
+.page__content p { margin: 0.7em 0; }
 
-/* ヘッダー帯（ナビ部分） */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav * {
-  background-color: gainsboro !important;
-  box-shadow: none !important;
-  border: none !important;
-}
+/* リンクをやさしく、ホバーで下線 */
+.page__content a { text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.15); }
+.page__content a:hover { border-bottom-color: currentColor; }
 
-/* フッター帯 */
-.page__footer,
-.page__footer *,
-.page__footer-follow,
-.page__footer-copyright {
-  background-color: gainsboro !important;
-  border-top: none !important;
-  box-shadow: none !important;
-}
+/* プロフィール画像を整える（サイズと丸み） */
+.author__avatar img { max-width: 180px; border-radius: 50%; }
 
+/* ヘッダの余白・影を少し軽く */
+.masthead { box-shadow: none; border-bottom: 1px solid rgba(0,0,0,.06); }
+
+/* カード感を薄く（フラットで今っぽく） */
+.page, .archive { box-shadow: none; background: #fff; }
