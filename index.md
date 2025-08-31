@@ -9,7 +9,7 @@ toc: false         # 目次が出る場合はこれで非表示
 ---
 # Hello!
 
-Starting this September, I will be joining the Institute of Social and Economic Research at the University of Osaka as an Associate Professor (without tenure).
+I am currently an Associate Professor (without tenure) at the Institute of Social and Economic Research, the University of Osaka.
 
 My research interests lie in macroeconomics, with a focus on key challenges facing the Japanese economy, including debt, low growth, and demographic decline.
 
