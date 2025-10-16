@@ -262,3 +262,29 @@
     }
   }
 }
+
+/* --------------------------------------------------------------------------
+   Icon-only (Dropbox 等): ラベルを隠してアイコンだけ表示する最小スタイル
+   author-profile.html 側で <li class="icon-only"> を付与した要素に適用
+   -------------------------------------------------------------------------- */
+
+.author__urls .icon-only .label {
+  display: none;
+}
+
+.author__urls .icon-only i {
+  /* アイコンをやや大きくして視認性を確保 */
+  font-size: $type-size-4;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.author__urls .icon-only a {
+  /* クリック領域を少し広げる（テキストが無い分の余白調整） */
+  padding-top: 4px;
+  padding-bottom: 4px;
+  /* 下線は hover 時も付けない方が“ボタン風”で視認性が良い場合が多い */
+  &:hover {
+    text-decoration: none;
+  }
+}
