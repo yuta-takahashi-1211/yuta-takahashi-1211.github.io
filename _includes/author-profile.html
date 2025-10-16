@@ -23,6 +23,18 @@
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+
+      {%- comment -%} ▼▼ 追加：Dropbox（スライド一時置き場）アイコンのみ ▼▼ {%- endcomment -%}
+      {% if author.dropbox %}
+        <li class="icon-only">
+          <a href="{{ author.dropbox }}" target="_blank" rel="noopener" aria-label="Slides (Dropbox)">
+            <i class="fab fa-fw fa-dropbox" aria-hidden="true"></i>
+            <span class="label">Slides</span>
+          </a>
+        </li>
+      {% endif %}
+      {%- comment -%} ▲▲ 追加ここまで ▲▲ {%- endcomment -%}
+
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
