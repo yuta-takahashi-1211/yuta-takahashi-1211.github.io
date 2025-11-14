@@ -21,7 +21,3 @@ We are also recruiting students with a strong interest in microeconomic theory, 
 **Historical Data Digitization Project**
 
 For undergraduate students interested in applied research support, we are offering a project focused on digitizing historical data from a range of published sources. The work provides practical experience in historical data collection and management, as well as basic data analysis and quality assurance. No prior technical skills are required.
-
-## How to Apply
-
-Please send an email to yuta.takahashi.iser@osaka-u.ac.jp
