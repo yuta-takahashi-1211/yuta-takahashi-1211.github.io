@@ -5,7 +5,9 @@ permalink: /ra/
 author_profile: true
 ---
 
-We are currently recruiting research assistants for (i) macroeconomics, (ii) a microeconomic theory reading group, and (iii) undergraduate research projects. Further details are provided below.
+We are currently recruiting research assistants for (i) macroeconomics, (ii) a microeconomic theory reading group, and (iii) undergraduate research projects. Further details are provided below. If you are interested, please send an email with your **name**, **year in school**, and a **CV (if available)** to: [**yuta.takahashi.iser@osaka-u.ac.jp**](mailto:yuta.takahashi.iser@osaka-u.ac.jp)
+
+
 
 ## Macroeconomics Research Assistants
 
@@ -15,9 +17,10 @@ Research assistants will be involved in data analysis and/or reviewing the liter
 
 We are also recruiting students with a strong interest in microeconomic theory, particularly those focused on theoretical papers that could have significant implications for macroeconomics. If you have specific theoretical papers in mind that bridge microeconomics and macroeconomics, or if you are interested in exploring how microeconomic foundations inform macroeconomic phenomena, please contact us with your area of interest, relevant paper references, and a brief explanation of why these papers interest you.
 
-## Undergraduate Research Projects: Historical Data Digitization Project
+## Undergraduate Research Projects: 
+**Historical Data Digitization Project**
 
-For undergraduate students interested in applied research work, we have a project involving the digitization of historical data from physics textbooks. This project offers hands-on experience with historical data collection and management, data entry and quality control, and understanding the intersection of physical science and economic history. If you are interested in this type of work and would like to contribute to building valuable historical datasets, please contact us.
+For undergraduate students interested in applied research support, we are offering a project focused on digitizing historical data from a range of published sources. The work provides practical experience in historical data collection and management, as well as basic data analysis and quality assurance. No prior technical skills are required.
 
 ## How to Apply
 
