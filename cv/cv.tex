@@ -14,11 +14,13 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{datetime2}
+\usepackage{fontawesome5}
 
 % Colors
 \usepackage{xcolor}
 \definecolor{linkcolor}{RGB}{0,51,102}
 \definecolor{darknavy}{RGB}{0,32,76}
+\definecolor{lightgray}{RGB}{180,180,180}
 
 % Hyperref settings
 \hypersetup{
@@ -29,52 +31,54 @@
     pdftitle={Curriculum Vitae - Yuta Takahashi}
 }
 
-% Section formatting
+% Section formatting with more spacing
 \titleformat{\section}
     {\large\bfseries\scshape\color{darknavy}}
     {}
     {0em}
     {}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\section}{0pt}{16pt}{8pt}
 
-% Header/Footer
+% Header/Footer - improved style
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{\thepage\ / \pageref{LastPage}}
+\fancyfoot[C]{{\small\color{gray} Page \thepage\ of \pageref{LastPage}}}
 
 % Custom commands - bold text in dark navy
 \newcommand{\entrytitle}[1]{{\bfseries\color{darknavy}#1}}
 
-% Entry with period on new line below institution
+% Entry with period on new line, date right-aligned
 \newcommand{\entry}[3]{
-    \noindent\entrytitle{#1}\\
+    \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \entrytitle{#1} & \\
+    \end{tabular*}\\[-2pt]
     #2\\
-    #3\par\vspace{6pt}
+    #3\par\vspace{8pt}
 }
 
-% Paper with co-authors on new line, smaller font
+% Paper with co-authors on new line, smaller font - title in bold
 \newcommand{\paper}[3]{
-    \item ``#1''\\
+    \item \textbf{``#1''}\\
     {\small #2}\\
     \textit{#3}
 }
 
-% Paper without co-authors
+% Paper without co-authors - title in bold
 \newcommand{\papersolo}[2]{
-    \item ``#1''\\
+    \item \textbf{``#1''}\\
     \textit{#2}
 }
 
-% Working paper with co-authors on new line, smaller font
+% Working paper with co-authors on new line, smaller font - title in bold
 \newcommand{\workingpaper}[3]{
-    \item ``#1'' (#2)\\
+    \item \textbf{``#1''} (#2)\\
     {\small #3}
 }
 
-% Working paper without co-authors
+% Working paper without co-authors - title in bold
 \newcommand{\workingpapersolo}[2]{
-    \item ``#1'' (#2)
+    \item \textbf{``#1''} (#2)
 }
 
 % Education entry - single line
@@ -88,15 +92,17 @@
 % Header
 \begin{center}
     {\LARGE\bfseries\color{darknavy} Yuta Takahashi}\\[2pt]
-    {\large (高橋悠太)}\\[10pt]
+    {\large (高橋悠太)}\\[8pt]
 
-    6-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan\\[3pt]
-    \href{mailto:yuta.takahashi.iser@osaka-u.ac.jp}{yuta.takahashi.iser@osaka-u.ac.jp}\\[10pt]
+    {\color{lightgray}\rule{0.6\textwidth}{0.4pt}}\\[8pt]
 
-    {\small Last Updated: \today}
+    \faMapMarker*\ 6-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan\\[4pt]
+    \faEnvelope\ \href{mailto:yuta.takahashi.iser@osaka-u.ac.jp}{yuta.takahashi.iser@osaka-u.ac.jp}\\[10pt]
+
+    {\small\color{gray} Last Updated: \today}
 \end{center}
 
-\vspace{10pt}
+\vspace{8pt}
 
 % Academic Positions
 \section{Academic Positions}
@@ -123,7 +129,7 @@
 % Published Papers
 \section{Published Papers}
 
-\begin{enumerate}[leftmargin=*, labelsep=8pt]
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
     \paper{Universal Gravity}
     {with Treb Allen and Costas Arkolakis}
     {Journal of Political Economy, 128(2): 393--433, 2020}
@@ -136,12 +142,12 @@
 % Papers Under Revision
 \section{Papers Under Revision}
 
-\begin{enumerate}[leftmargin=*, labelsep=8pt]
-    \item ``An Experiment on a Multi-Period Beauty Contest Game'' (2024)\\
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
+    \item \textbf{``An Experiment on a Multi-Period Beauty Contest Game''} (2024)\\
     {\small with Nobuyuki Hanaki}\\
     \textit{Revision requested at Experimental Economics}
 
-    \item ``Robustly Optimal Voting Rule'' (2024)\\
+    \item \textbf{``Robustly Optimal Voting Rule''} (2024)\\
     {\small with Noriaki Kiguchi and Shunpei Noguchi}\\
     \textit{Revision requested at Journal of Economic Theory}
 \end{enumerate}
@@ -149,7 +155,7 @@
 % Working Papers
 \section{Working Papers}
 
-\begin{enumerate}[leftmargin=*, labelsep=8pt]
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
     \workingpaper{Does Expected Inflation Matter? Evidence from Value-Added Tax Hikes in Japan}{2024}
     {with Naoki Takayama}
 
