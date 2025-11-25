@@ -50,3 +50,242 @@ footer {
   display: none !important;
 }
 
+/* ==========================================================================
+   CUSTOM STYLISH ENHANCEMENTS
+   ========================================================================== */
+
+/* Import Google Fonts - Inter for modern look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global typography enhancement */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* Masthead / Navigation improvements */
+.masthead {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(238, 238, 238, 0.85) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  &::after {
+    background: linear-gradient(90deg, transparent, rgba(0, 146, 202, 0.3), transparent) !important;
+  }
+}
+
+.greedy-nav {
+  a {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 0.25s ease;
+  }
+
+  .visible-links {
+    a {
+      position: relative;
+      padding: 0.5rem 0;
+      margin: 0 1rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #0092ca, #00b4d8);
+        transition: width 0.3s ease;
+        border-radius: 2px;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+
+      &:hover {
+        color: #0092ca !important;
+      }
+    }
+  }
+}
+
+.site-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #222831, #0092ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Author/Sidebar enhancements */
+.author__avatar {
+  img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 146, 202, 0.15);
+    border: 3px solid rgba(0, 146, 202, 0.2) !important;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 30px rgba(0, 146, 202, 0.25);
+    }
+  }
+}
+
+.author__name {
+  font-weight: 600 !important;
+  letter-spacing: -0.01em;
+}
+
+.author__bio {
+  color: #555;
+  font-weight: 400;
+}
+
+.author__urls {
+  a {
+    transition: all 0.25s ease;
+    border-radius: 6px;
+    padding: 6px 10px !important;
+    margin: 2px 0;
+
+    &:hover {
+      background: rgba(0, 146, 202, 0.08);
+      text-decoration: none !important;
+      color: #0092ca !important;
+      transform: translateX(3px);
+    }
+  }
+
+  .icon-only a:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Page content improvements */
+.page__content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #1a1a2e;
+  }
+
+  h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #0092ca, #00b4d8);
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    line-height: 1.8;
+    color: #333;
+  }
+
+  a:not(.btn) {
+    color: #0077b6;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 119, 182, 0.3);
+    transition: all 0.25s ease;
+
+    &:hover {
+      color: #0092ca;
+      border-bottom-color: #0092ca;
+    }
+  }
+}
+
+/* Button enhancements */
+.btn {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 146, 202, 0.3);
+  }
+
+  &--primary {
+    background: linear-gradient(135deg, #0092ca, #00b4d8);
+    border: none;
+  }
+}
+
+/* Archive/List items enhancement */
+.archive__item {
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  border-radius: 12px;
+
+  &:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 146, 202, 0.03);
+  }
+
+  &-title {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+
+    a {
+      transition: color 0.25s ease;
+
+      &:hover {
+        color: #0092ca !important;
+      }
+    }
+  }
+}
+
+/* Selection color */
+::selection {
+  background: rgba(0, 146, 202, 0.2);
+  color: #1a1a2e;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid rgba(0, 146, 202, 0.5);
+  outline-offset: 2px;
+}
+
+/* Subtle animation on page load */
+.page__content,
+.sidebar {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
