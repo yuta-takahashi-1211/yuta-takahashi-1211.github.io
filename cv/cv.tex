@@ -77,6 +77,11 @@
     \item ``#1'' (#2)
 }
 
+% Education entry - single line
+\newcommand{\education}[3]{
+    \noindent\entrytitle{#1}, #2, #3\par\vspace{4pt}
+}
+
 % Document begins
 \begin{document}
 
@@ -111,17 +116,9 @@
 % Education
 \section{Education}
 
-\entry{Northwestern University}
-{2018}
-{Ph.D. in Economics}
-
-\entry{Kyoto University}
-{2011}
-{M.A. in Economics}
-
-\entry{Kyoto University}
-{2009}
-{B.A. in Economics}
+\education{Ph.D. in Economics}{Northwestern University}{2018}
+\education{M.A. in Economics}{Kyoto University}{2011}
+\education{B.A. in Economics}{Kyoto University}{2009}
 
 % Published Papers
 \section{Published Papers}
