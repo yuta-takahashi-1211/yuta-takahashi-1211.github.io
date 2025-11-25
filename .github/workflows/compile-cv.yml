@@ -1,0 +1,40 @@
+name: Compile LaTeX CV
+
+on:
+  push:
+    paths:
+      - 'cv/cv.tex'
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv/cv.tex
+          latexmk_use_xelatex: true
+          extra_system_packages: "fonts-noto-cjk"
+
+      - name: Move PDF to files directory
+        run: |
+          mkdir -p files
+          mv cv/cv.pdf files/cv.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add files/cv.pdf
+          git diff --staged --quiet || git commit -m "Update CV PDF (compiled on $(date +'%Y-%m-%d'))"
+          git push
