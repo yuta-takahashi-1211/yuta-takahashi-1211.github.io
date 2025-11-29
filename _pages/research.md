@@ -31,5 +31,5 @@ author_profile: true
 ---
 
 # Other Publication
-- "A Parsimonious Model for Zero Inflation at the Zero Lower Bound." *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)  
-  *The order of Figures 1 and 2 should be reversed. Refer to this working paper version for clarification.* [working paper](#)
+- "A Parsimonious Model for Zero Inflation at the Zero Lower Bound." *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)
+  *The order of Figures 1 and 2 should be reversed. Refer to [this working paper version](https://www.dropbox.com/scl/fi/jlc8bozhgydxanm2rim0w/manucriptMildDeflationWed.pdf?rlkey=f92fxeruvpq04cowsq7lvvt96&dl=0) for clarification.*
