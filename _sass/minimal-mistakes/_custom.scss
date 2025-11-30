@@ -47,4 +47,19 @@ footer {
   display: none !important;
 }
 
+/* --- 背景色を統一（白い部分をなくす） --- */
+.author__urls:after {
+  border-color: var(--global-bg-color) transparent !important;
+}
+
+.modal {
+  background: var(--global-bg-color) !important;
+}
+
+.navicon,
+.navicon:before,
+.navicon:after {
+  background: var(--global-text-color) !important;
+}
+
 
