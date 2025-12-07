@@ -31,5 +31,5 @@ author_profile: true
 ---
 
 # Other Publication
-- ["A Parsimonious Model for Zero Inflation at the Zero Lower Bound."](https://www.dropbox.com/scl/fi/jlc8bozhgydxanm2rim0w/manucriptMildDeflationWed.pdf?rlkey=f92fxeruvpq04cowsq7lvvt96&dl=0) *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)
-  *Refer to [this working paper version](https://www.dropbox.com/scl/fi/jlc8bozhgydxanm2rim0w/manucriptMildDeflationWed.pdf?rlkey=f92fxeruvpq04cowsq7lvvt96&dl=0) to confirm the correct version.*
+- ["A Parsimonious Model for Zero Inflation at the Zero Lower Bound."](https://www.sciencedirect.com/science/article/abs/pii/S0165176524006189) *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)
+  *Refer to [this working paper version](https://www.dropbox.com/scl/fo/znyay9p9aps6m3taogdic/AExp2zP9580Es1B40pNrbzc?rlkey=z2bdu71l5chkbn0bhblv96x1i&dl=0) to confirm the correct version.*
