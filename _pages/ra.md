@@ -5,7 +5,7 @@ permalink: /ra/
 author_profile: true
 ---
 
-We are currently recruiting research assistants for (i) macroeconomics, (ii) a microeconomic theory reading group, and (iii) undergraduate research projects. Further details are provided below. If you are interested, please send an email with your **name**, **year in school**, and a **CV (if available)** to: [**yuta.takahashi.iser@osaka-u.ac.jp**](mailto:yuta.takahashi.iser@osaka-u.ac.jp)
+We are currently recruiting research assistants for (i) macroeconomics, (ii) a microeconomic theory reading group, and (iii) undergraduate research projects. Further details are provided below. If you are interested, please send an email with your **name**, **year in school**, and a **CV (if available)** to: [**yuta.takahashi@iser.osaka-u.ac.jp**](mailto:yuta.takahashi@iser.osaka-u.ac.jp)
 
 
 
