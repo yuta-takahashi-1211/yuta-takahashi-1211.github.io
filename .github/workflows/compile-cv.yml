@@ -30,7 +30,7 @@ jobs:
       - name: Move PDF to files directory
         run: |
           mkdir -p files
-          mv cv/cv.pdf files/cv.pdf
+          mv cv.pdf files/cv.pdf
 
       - name: Commit and push PDF
         run: |
