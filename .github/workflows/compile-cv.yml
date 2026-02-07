@@ -25,7 +25,7 @@ jobs:
         with:
           root_file: cv/cv.tex
           latexmk_use_xelatex: true
-          extra_system_packages: "noto-fonts-cjk"
+          extra_system_packages: ""
 
       - name: Move PDF to files directory
         run: |
