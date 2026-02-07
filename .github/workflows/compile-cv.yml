@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'cv/cv.tex'
+      - '.github/workflows/compile-cv.yml'
     branches:
       - main
       - master
@@ -24,7 +25,7 @@ jobs:
         with:
           root_file: cv/cv.tex
           latexmk_use_xelatex: true
-          extra_system_packages: "font-noto-cjk"
+          extra_system_packages: "noto-fonts-cjk"
 
       - name: Move PDF to files directory
         run: |
