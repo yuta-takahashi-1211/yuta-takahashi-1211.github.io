@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'cv/cv.tex'
+      - '.github/workflows/compile-cv.yml'
     branches:
       - main
       - master
@@ -11,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   build:
@@ -24,12 +26,12 @@ jobs:
         with:
           root_file: cv/cv.tex
           latexmk_use_xelatex: true
-          extra_system_packages: "fonts-noto-cjk"
+          extra_system_packages: ""
 
       - name: Move PDF to files directory
         run: |
           mkdir -p files
-          mv cv/cv.pdf files/cv.pdf
+          mv cv.pdf files/cv.pdf
 
       - name: Commit and push PDF
         run: |
@@ -38,3 +40,14 @@ jobs:
           git add files/cv.pdf
           git diff --staged --quiet || git commit -m "Update CV PDF (compiled on $(date +'%Y-%m-%d'))"
           git push
+
+      - name: Trigger GitHub Pages deploy
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: 'master',
+            });
