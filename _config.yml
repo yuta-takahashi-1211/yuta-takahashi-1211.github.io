@@ -14,12 +14,15 @@ repository: "yuta-takahashi-1211/yuta-takahashi-1211.github.io"
 author:
   name: "Yuta Takahashi"
   avatar: "https://yuta-takahashi-1211.github.io/assets/images/IMG_0156_edited.jpg"
-  bio: "Macroeconomics"
+  bio: "Associate Professor<br>Institute of Social and Economic Research<br>Osaka University"
   location: "Osaka, Japan"
   links:
-    - label: "Email"
+    - label: "yuta.takahashi@iser.osaka-u.ac.jp"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:yuta.takahashi@iser.osaka-u.ac.jp"
-  dropbox: "https://www.dropbox.com/scl/fo/w76pzes5icj8c0p4y4d01/APpSFfJGyi0qpAcqd9xcp9c?rlkey=lq8jjdf2e1fwotknplofjw0zn&dl=0"    
+    - label: "Dropbox"
+      icon: "fab fa-fw fa-dropbox"
+      url: "https://www.dropbox.com/scl/fo/w76pzes5icj8c0p4y4d01/APpSFfJGyi0qpAcqd9xcp9c?rlkey=lq8jjdf2e1fwotknplofjw0zn&dl=0"
       
 
 # 互換性のため owner も定義（派生レイアウト対策）
