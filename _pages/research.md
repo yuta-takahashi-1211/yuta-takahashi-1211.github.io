@@ -17,7 +17,7 @@ author_profile: true
 - ["Robustly Optimal Voting Rule"](https://www.dropbox.com/home/SuccessiveVoting/web?share_manage_access=false) (2025), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home) <br>
 *(Revise and Resubmitted at Journal of Economic Theory)*
 - ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) <br>
-*(Conditionally accepted with a few minor revisions at Experimental Economics)*
+*(Conditionally accepted at Experimental Economics (with minor revisions))*
 
 ---
 
