@@ -4,12 +4,12 @@ title: ""
 permalink: /research/
 author_profile: true
 ---
-# Published Paper:
+## Published Paper:
 - ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
 
 ---
 
-# Working Papers:
+## Working Papers:
 - ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"](https://www.dropbox.com/scl/fo/03hun5pxioram7n6te16p/AP5nKTLL343b3KRFzU191-g?rlkey=8hu4n5kn9h8p80z20teyjeq23&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/) *(submitted)*
 - ["Hidden Stagflation"](https://www.dropbox.com/home/bad_inflation/web) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
@@ -21,7 +21,7 @@ author_profile: true
 
 ---
 
-# Works in Progress
+## Works in Progress
 - "Excess Returns of Integrated Government Balance Sheet"
 - "The Corporate Saving Glut in Japan"
 - "The Real Macroeconomics of Japanese Stagnation"
@@ -30,6 +30,6 @@ author_profile: true
 
 ---
 
-# Other Publication
+## Other Publication
 - ["A Parsimonious Model for Zero Inflation at the Zero Lower Bound."](https://www.sciencedirect.com/science/article/abs/pii/S0165176524006189) *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)
   *Refer to [this working paper version](https://www.dropbox.com/scl/fo/znyay9p9aps6m3taogdic/AExp2zP9580Es1B40pNrbzc?rlkey=z2bdu71l5chkbn0bhblv96x1i&dl=0) to confirm the correct version.*
