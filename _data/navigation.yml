@@ -5,7 +5,7 @@ main:
     url: /ra/
   - title: "CV"
     url: /files/cv.pdf
-  - title: '<i class="fab fa-dropbox"></i> Dropbox'
+  - title: '<i class="fab fa-dropbox"></i>'
     url: "https://www.dropbox.com/scl/fo/w76pzes5icj8c0p4y4d01/APpSFfJGyi0qpAcqd9xcp9c?rlkey=lq8jjdf2e1fwotknplofjw0zn&dl=0"
 
 footer: []
