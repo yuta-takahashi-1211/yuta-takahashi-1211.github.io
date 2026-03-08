@@ -49,11 +49,25 @@ jobs:
               console.log(`Created PR: #${pr.number}`);
             }
 
+            // Wait a moment for PR to be ready
+            await new Promise(resolve => setTimeout(resolve, 3000));
+
             // Merge PR
-            await github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: pr.number,
-              merge_method: 'squash',
-            });
-            console.log(`Merged PR: #${pr.number}`);
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'merge',
+              });
+              console.log(`Merged PR: #${pr.number}`);
+            } catch (mergeError) {
+              console.log(`Merge failed with 'merge', trying 'squash'...`);
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'squash',
+              });
+              console.log(`Squash merged PR: #${pr.number}`);
+            }
