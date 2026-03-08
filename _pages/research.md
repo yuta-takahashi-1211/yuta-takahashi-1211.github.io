@@ -19,7 +19,7 @@ author_profile: true
 
 ## Working Papers:
 - ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"](https://www.dropbox.com/scl/fo/03hun5pxioram7n6te16p/AP5nKTLL343b3KRFzU191-g?rlkey=8hu4n5kn9h8p80z20teyjeq23&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
-- ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/) *(submitted)*
+- ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Hidden Stagflation"](https://www.dropbox.com/home/bad_inflation/web) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Anchoring Inflation Expectation"](https://www.dropbox.com/scl/fo/0kf9p5ntgox4cynbx0fvl/AD68Qi_jBnwbvUYGORn6MPM?rlkey=anx7yq9axeve92rwpc908hps5&dl=0) (2020), with Lawrence Christiano
 
