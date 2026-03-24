@@ -4,16 +4,16 @@ title: ""
 permalink: /research/
 author_profile: true
 ---
-## Published Paper:
+## Published Papers:
 - ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
+- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) <br>
+*(Forthcoming at Experimental Economics)*
 
 ---
 
 ## Papers Under Revision:
 - ["Robustly Optimal Voting Rule"](https://www.dropbox.com/home/SuccessiveVoting/web?share_manage_access=false) (2025), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home) <br>
 *(Conditionally accepted at Journal of Economic Theory)*
-- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) <br>
-*(Conditionally accepted at Experimental Economics, with minor revisions)*
 
 ---
 
