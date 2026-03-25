@@ -1,0 +1,41 @@
+name: Compile Japanese CV
+
+on:
+  push:
+    paths:
+      - 'cv/cv_ja.tex'
+      - '.github/workflows/compile-cv-ja.yml'
+    branches:
+      - main
+      - master
+      - 'claude/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile Japanese LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv/cv_ja.tex
+          latexmk_use_xelatex: true
+
+      - name: Move PDF to files directory
+        run: |
+          mkdir -p files
+          mv cv_ja.pdf files/cv_ja.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add files/cv_ja.pdf
+          git diff --staged --quiet || git commit -m "Add Japanese CV PDF (compiled on $(date +'%Y-%m-%d'))"
+          git push

@@ -1,0 +1,203 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+
+% XeLaTeX packages for Unicode support
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{HaranoAjiMincho}[Scale=0.9]
+\setmainfont{Latin Modern Roman}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{datetime2}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{linkcolor}{RGB}{0,51,102}
+\definecolor{darknavy}{RGB}{0,32,76}
+\definecolor{lightgray}{RGB}{180,180,180}
+
+% Hyperref settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfauthor={Yuta Takahashi},
+    pdftitle={研究業績 - 高橋悠太}
+}
+
+% Section formatting
+\titleformat{\section}
+    {\large\bfseries\scshape\color{darknavy}}
+    {}
+    {0em}
+    {}[\titlerule]
+\titlespacing{\section}{0pt}{16pt}{8pt}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{{\small\color{gray} \thepage\ / \pageref{LastPage} ページ}}
+
+% Custom commands
+\newcommand{\entrytitle}[1]{{\bfseries\color{darknavy}#1}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries\color{darknavy} 高橋 悠太}\\[2pt]
+    {\large (たかはし ゆうた / Yuta Takahashi)}\\[8pt]
+    {\color{lightgray}\rule{0.6\textwidth}{0.4pt}}\\[8pt]
+    〒567-0047　大阪府茨木市美穂ヶ丘6-1\\[2pt]
+    大阪大学 社会経済研究所\\[4pt]
+    \href{mailto:yuta.takahashi@iser.osaka-u.ac.jp}{yuta.takahashi@iser.osaka-u.ac.jp}\\[10pt]
+    {\small\color{gray} 作成日：\today}
+\end{center}
+
+\vspace{8pt}
+
+%----------------------------------------------------------------------
+\section{（１）氏名}
+
+\noindent\textbf{高橋 悠太}（たかはし ゆうた / Yuta Takahashi）
+
+\vspace{8pt}
+
+%----------------------------------------------------------------------
+\section{（２）研究の概要}
+
+\noindent
+マクロ経済学を専門とし、日本経済が直面する主要課題（財政赤字・低成長・少子高齢化）を中心に研究を行っている。
+具体的には、インフレ期待の形成メカニズム、ゼロ金利制約下での金融政策、国際貿易における重力モデル、技術進歩の停滞、
+名目賃金の下方硬直性などを研究対象としている。理論・実証の両面からアプローチし、
+日本および世界経済の停滞・スタグフレーション現象の解明にも取り組んでいる。
+
+\vspace{8pt}
+
+%----------------------------------------------------------------------
+\section{（３）学歴・職歴}
+
+\subsection*{学歴}
+\vspace{4pt}
+\begin{tabular}{@{}lll@{}}
+    2009年 & 京都大学 経済学部 & 学士（経済学）\\[4pt]
+    2011年 & 京都大学大学院 経済学研究科 & 修士（経済学）\\[4pt]
+    2018年 & Northwestern University & Ph.D. in Economics\\
+\end{tabular}
+
+\vspace{12pt}
+
+\subsection*{職歴}
+\vspace{4pt}
+\begin{tabular}{@{}lll@{}}
+    2018年9月 -- 2020年3月 & 一橋大学 経済研究所 & 非常勤研究員（ポスドク）\\[4pt]
+    2020年4月 -- 2025年8月 & 一橋大学 経済研究所 & 准教授\\[4pt]
+    2025年9月 -- 現在       & 大阪大学 社会経済研究所 & 准教授（任期なし）\\
+\end{tabular}
+
+\vspace{8pt}
+
+%----------------------------------------------------------------------
+\section{（４）主な発表論文名・著書名等}
+
+\subsection*{査読付き論文}
+\vspace{4pt}
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
+
+    \item \textbf{``Universal Gravity''}\\
+    {\small Treb Allen, Costas Arkolakis との共著}\\
+    \textit{Journal of Political Economy}, 128(2): 393--433, 2020
+
+    \item \textbf{``A Parsimonious Model for Zero Inflation at the Zero Lower Bound''}\\
+    {\small Naoki Takayama との共著}\\
+    \textit{Economics Letters}, Volume 247, 2025年2月
+
+    \item \textbf{``An Experiment on a Multi-Period Beauty Contest Game''} (2025)\\
+    {\small Nobuyuki Hanaki との共著}\\
+    \textit{Forthcoming at Experimental Economics}
+
+\end{enumerate}
+
+\subsection*{改訂中論文}
+\vspace{4pt}
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
+
+    \item \textbf{``Robustly Optimal Voting Rule''} (2025)\\
+    {\small Noriaki Kiguchi, Shinpei Noguchi との共著}\\
+    \textit{Conditionally accepted at Journal of Economic Theory}
+
+\end{enumerate}
+
+\subsection*{ワーキングペーパー}
+\vspace{4pt}
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
+
+    \item \textbf{``Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes''} (2024)\\
+    {\small Naoki Takayama との共著}
+
+    \item \textbf{``Global Technology Stagnation''} (2024)\\
+    {\small Naoki Takayama との共著}
+
+    \item \textbf{``Hidden Stagflation''} (2024)\\
+    {\small Naoki Takayama との共著}
+
+    \item \textbf{``Anchoring Inflation Expectation''} (2020)\\
+    {\small Lawrence Christiano との共著}
+
+\end{enumerate}
+
+\vspace{8pt}
+
+%----------------------------------------------------------------------
+\section{（５）その他}
+
+\subsection*{学会・セミナー・講演}
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item \textbf{Seminar in Macroeconomics} 共同オーガナイザー\\
+    一橋大学 経済研究所・京都大学 経済研究所の共同運営セミナー
+\end{itemize}
+
+\vspace{8pt}
+
+\subsection*{受賞歴}
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item （追記予定）
+\end{itemize}
+
+\vspace{8pt}
+
+\subsection*{学術誌レフェリー等}
+\vspace{4pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Canadian Journal of Economics
+    \item Economic Journal
+    \item Economic Modelling
+    \item Economic Theory
+    \item Economics Letters
+    \item European Economic Review
+    \item Games and Economic Behavior
+    \item Hitotsubashi Journal of Economics
+    \item International Economic Review
+    \item Journal of Applied Economics
+    \item Journal of Economic Behavior \& Organization
+    \item Journal of International Economics
+    \item Journal of Macroeconomics
+    \item Journal of Political Economy
+    \item Journal of the Japanese and International Economies
+    \item Quantitative Economics
+    \item Review of Economic Dynamics
+    \item Review of Economic Studies
+    \item 経済研究
+\end{itemize}
+
+\end{document}
