@@ -14,8 +14,6 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{datetime2}
-\usepackage{booktabs}
-\usepackage{array}
 
 % Colors
 \usepackage{xcolor}
@@ -32,7 +30,7 @@
     pdftitle={研究業績 - 高橋悠太}
 }
 
-% Section formatting
+% Section formatting with more spacing
 \titleformat{\section}
     {\large\bfseries\scshape\color{darknavy}}
     {}
@@ -44,10 +42,37 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{{\small\color{gray} \thepage\ / \pageref{LastPage} ページ}}
+\fancyfoot[C]{{\small\color{gray} Page \thepage\ of \pageref{LastPage}}}
 
-% Custom commands
+% Custom commands - bold text in dark navy
 \newcommand{\entrytitle}[1]{{\bfseries\color{darknavy}#1}}
+
+% Entry with period on new line, date right-aligned
+\newcommand{\entry}[3]{
+    \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \entrytitle{#1} & \\
+    \end{tabular*}\\[-2pt]
+    #2\\
+    #3\par\vspace{8pt}
+}
+
+% Paper with co-authors on new line, smaller font
+\newcommand{\paper}[3]{
+    \item \textbf{``#1''}\\
+    {\small #2}\\
+    \textit{#3}
+}
+
+% Working paper with co-authors
+\newcommand{\workingpaper}[3]{
+    \item \textbf{``#1''} (#2)\\
+    {\small #3}
+}
+
+% Education entry
+\newcommand{\education}[3]{
+    \noindent\entrytitle{#1}, #2, #3\par\vspace{4pt}
+}
 
 \begin{document}
 
@@ -55,11 +80,13 @@
 \begin{center}
     {\LARGE\bfseries\color{darknavy} 高橋 悠太}\\[2pt]
     {\large (たかはし ゆうた / Yuta Takahashi)}\\[8pt]
+
     {\color{lightgray}\rule{0.6\textwidth}{0.4pt}}\\[8pt]
-    〒567-0047　大阪府茨木市美穂ヶ丘6-1\\[2pt]
-    大阪大学 社会経済研究所\\[4pt]
+
+    6-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan\\[4pt]
     \href{mailto:yuta.takahashi@iser.osaka-u.ac.jp}{yuta.takahashi@iser.osaka-u.ac.jp}\\[10pt]
-    {\small\color{gray} 作成日：\today}
+
+    {\small\color{gray} Last Updated: \today}
 \end{center}
 
 \vspace{8pt}
@@ -67,58 +94,41 @@
 %----------------------------------------------------------------------
 \section{（１）氏名}
 
-\noindent\textbf{高橋 悠太}（たかはし ゆうた / Yuta Takahashi）
-
-\vspace{8pt}
+\noindent 高橋 悠太（たかはし ゆうた / Yuta Takahashi）
 
 %----------------------------------------------------------------------
-\section{（２）研究の概要}
+\section{（２）学歴・職歴}
 
-\noindent
-マクロ経済学を専門とし、日本経済が直面する主要課題（財政赤字・低成長・少子高齢化）を中心に研究を行っている。
-具体的には、インフレ期待の形成メカニズム、ゼロ金利制約下での金融政策、国際貿易における重力モデル、技術進歩の停滞、
-名目賃金の下方硬直性などを研究対象としている。理論・実証の両面からアプローチし、
-日本および世界経済の停滞・スタグフレーション現象の解明にも取り組んでいる。
+\entry{大阪大学 社会経済研究所}
+{2025年9月 --}
+{准教授（任期なし）}
 
-\vspace{8pt}
+\entry{一橋大学 経済研究所}
+{2020年4月 -- 2025年8月}
+{准教授}
+
+\entry{一橋大学 経済研究所}
+{2018年9月 -- 2020年3月}
+{非常勤研究員（ポスドク）}
+
+\vspace{4pt}
+
+\education{Ph.D. in Economics}{Northwestern University}{2018}
+\education{修士（経済学）}{京都大学大学院 経済学研究科}{2011}
+\education{学士（経済学）}{京都大学 経済学部}{2009}
 
 %----------------------------------------------------------------------
-\section{（３）学歴・職歴}
+\section{（３）主な発表論文名・著書名等}
 
-\subsection*{学歴}
-\vspace{4pt}
-\begin{tabular}{@{}lll@{}}
-    2009年 & 京都大学 経済学部 & 学士（経済学）\\[4pt]
-    2011年 & 京都大学大学院 経済学研究科 & 修士（経済学）\\[4pt]
-    2018年 & Northwestern University & Ph.D. in Economics\\
-\end{tabular}
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
 
-\vspace{12pt}
+    \paper{Universal Gravity}
+    {Treb Allen, Costas Arkolakis との共著}
+    {Journal of Political Economy, 128(2): 393--433, 2020}
 
-\subsection*{職歴}
-\vspace{4pt}
-\begin{tabular}{@{}lll@{}}
-    2018年9月 -- 2020年3月 & 一橋大学 経済研究所 & 非常勤研究員（ポスドク）\\[4pt]
-    2020年4月 -- 2025年8月 & 一橋大学 経済研究所 & 准教授\\[4pt]
-    2025年9月 -- 現在       & 大阪大学 社会経済研究所 & 准教授（任期なし）\\
-\end{tabular}
-
-\vspace{8pt}
-
-%----------------------------------------------------------------------
-\section{（４）主な発表論文名・著書名等}
-
-\subsection*{査読付き論文}
-\vspace{4pt}
-\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
-
-    \item \textbf{``Universal Gravity''}\\
-    {\small Treb Allen, Costas Arkolakis との共著}\\
-    \textit{Journal of Political Economy}, 128(2): 393--433, 2020
-
-    \item \textbf{``A Parsimonious Model for Zero Inflation at the Zero Lower Bound''}\\
-    {\small Naoki Takayama との共著}\\
-    \textit{Economics Letters}, Volume 247, 2025年2月
+    \paper{A Parsimonious Model for Zero Inflation at the Zero Lower Bound}
+    {Naoki Takayama との共著}
+    {Economics Letters, Volume 247, 2025年2月}
 
     \item \textbf{``An Experiment on a Multi-Period Beauty Contest Game''} (2025)\\
     {\small Nobuyuki Hanaki との共著}\\
@@ -126,9 +136,10 @@
 
 \end{enumerate}
 
-\subsection*{改訂中論文}
 \vspace{4pt}
-\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
+\noindent\textit{改訂中}
+
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
 
     \item \textbf{``Robustly Optimal Voting Rule''} (2025)\\
     {\small Noriaki Kiguchi, Shinpei Noguchi との共著}\\
@@ -136,48 +147,48 @@
 
 \end{enumerate}
 
-\subsection*{ワーキングペーパー}
 \vspace{4pt}
-\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=8pt]
+\noindent\textit{ワーキングペーパー}
 
-    \item \textbf{``Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes''} (2024)\\
-    {\small Naoki Takayama との共著}
+\begin{enumerate}[leftmargin=*, labelsep=8pt, itemsep=6pt]
 
-    \item \textbf{``Global Technology Stagnation''} (2024)\\
-    {\small Naoki Takayama との共著}
+    \workingpaper{Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes}{2024}
+    {Naoki Takayama との共著}
 
-    \item \textbf{``Hidden Stagflation''} (2024)\\
-    {\small Naoki Takayama との共著}
+    \workingpaper{Global Technology Stagnation}{2024}
+    {Naoki Takayama との共著}
 
-    \item \textbf{``Anchoring Inflation Expectation''} (2020)\\
-    {\small Lawrence Christiano との共著}
+    \workingpaper{Hidden Stagflation}{2024}
+    {Naoki Takayama との共著}
+
+    \workingpaper{Anchoring Inflation Expectation}{2020}
+    {Lawrence Christiano との共著}
 
 \end{enumerate}
 
-\vspace{8pt}
-
 %----------------------------------------------------------------------
-\section{（５）その他}
+\section{（４）その他}
 
-\subsection*{学会・セミナー・講演}
-\vspace{4pt}
+\noindent\entrytitle{学会・セミナー・講演}
+
+\vspace{6pt}
 \begin{itemize}[leftmargin=*, itemsep=4pt]
     \item \textbf{Seminar in Macroeconomics} 共同オーガナイザー\\
-    一橋大学 経済研究所・京都大学 経済研究所の共同運営セミナー
+    {\small 一橋大学 経済研究所・京都大学 経済研究所の共同運営セミナー}
 \end{itemize}
 
 \vspace{8pt}
+\noindent\entrytitle{受賞歴}
 
-\subsection*{受賞歴}
-\vspace{4pt}
+\vspace{6pt}
 \begin{itemize}[leftmargin=*, itemsep=4pt]
     \item （追記予定）
 \end{itemize}
 
 \vspace{8pt}
+\noindent\entrytitle{学術誌レフェリー}
 
-\subsection*{学術誌レフェリー等}
-\vspace{4pt}
+\vspace{6pt}
 \begin{itemize}[leftmargin=*, itemsep=2pt]
     \item Canadian Journal of Economics
     \item Economic Journal
