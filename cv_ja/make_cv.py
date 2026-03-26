@@ -142,7 +142,7 @@ for i, (title, coauthor, journal) in enumerate(papers, 1):
     r3 = p.add_run(f'\n      {coauthor}\n      {journal}')
     set_font(r3)
 
-add_subheading(doc, 'ワーキングペーパー')
+add_subheading(doc, '未刊行論文')
 
 wps = [
     (
