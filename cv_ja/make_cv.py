@@ -268,12 +268,11 @@ for year in sorted(presentations.keys(), reverse=True):
     run = p.add_run(f'{year}年')
     set_font(run, bold=True)
 
-    for venue in presentations[year]:
-        p = doc.add_paragraph()
-        p.paragraph_format.space_after = Pt(1)
-        p.paragraph_format.left_indent = Cm(0.5)
-        run = p.add_run(venue)
-        set_font(run)
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(2)
+    p.paragraph_format.left_indent = Cm(0.5)
+    run = p.add_run(', '.join(presentations[year]))
+    set_font(run)
 
 # 保存
 out_path = 'cv_ja/cv_ja.docx'
