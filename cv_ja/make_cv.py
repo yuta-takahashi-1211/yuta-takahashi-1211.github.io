@@ -213,6 +213,71 @@ p.paragraph_format.space_after = Pt(2)
 run = p.add_run(referee_text)
 set_font(run)
 
+# ─────────────────────────────────────────
+# 講演・口頭発表等
+# ─────────────────────────────────────────
+add_heading(doc, '【講演・口頭発表等】')
+
+presentations = {
+    2025: [
+        ('5月', 'The 2nd International SPACE Workshop', '招待'),
+        ('5月', '財務総合政策研究所セミナー', '招待'),
+        ('8月', 'SWET 2025 (Macroeconomics, Financial Economics Session)', ''),
+        ('8月', '2025 World Congress of the Econometric Society', ''),
+        ('9月', 'The 1st Workshop of the East and South-East Asian Macroeconomic Society', ''),
+        ('10月', 'International Workshop on Experiments in Macroeconomics and Finance', '招待'),
+        ('11月', 'WAMS 2025', ''),
+        ('12月', 'OzMac 2025', ''),
+    ],
+    2024: [
+        ('3月', 'HSI2023-The 9th Hitotsubashi Summer Institute', ''),
+        ('3月', 'ANU-AJRC, Hitotsubashi, Keio and University of Tokyo Conference on Frontiers in Macroeconomics', ''),
+    ],
+    2023: [
+        ('7月', '2023 Asian Meeting of the Econometric Society in East and Southeast Asia (AMES)', ''),
+        ('9月', '日本経済学会 2023 年度秋季大会', '招待'),
+        ('12月', 'European Winter Meeting of the Econometric Society 2023', ''),
+    ],
+    2021: [
+        ('1月', 'マクロ経済学ワークショップ（一橋大学）', ''),
+        ('4月', 'マクロ経済学ワークショップ 2021（東京大学 CIRJE）', ''),
+        ('4月', 'マクロ金融ワークショップ（一橋大学）', ''),
+        ('5月', '第1回マクロ税制セミナー（学習院大学）', ''),
+        ('6月', '早稲田大学セミナー', ''),
+        ('6月', 'マクロ経済学ワークショップ（慶應大学）', ''),
+        ('7月', 'SED', ''),
+        ('7月', '六甲フォーラム（神戸大学）', ''),
+        ('9月', 'GSE-OSIPP-ISER Joint Conference in Economics（大阪大学）', ''),
+        ('12月', '7th Annual CIGS End of Year Macroeconomics Conference', ''),
+    ],
+    2020: [
+        ('1月', '東北大学現代経済学研究会', ''),
+        ('9月', '経済成長と構造変化に関する長期分析研究会', ''),
+        ('10月', 'ISER Virtual Workshop in Macro/International Economics', ''),
+    ],
+    2019: [
+        ('5月', 'CIGS Conference on Macroeconomic Theory and Policy 2019', ''),
+        ('9月', 'Monetary Policy Workshop', ''),
+    ],
+}
+
+for year in sorted(presentations.keys(), reverse=True):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(2)
+    run = p.add_run(f'{year}年')
+    set_font(run, bold=True)
+
+    for month, venue, invite in presentations[year]:
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(1)
+        p.paragraph_format.left_indent = Cm(0.5)
+        text = f'{month}　{venue}'
+        if invite:
+            text += f'　（{invite}）'
+        run = p.add_run(text)
+        set_font(run)
+
 # 保存
 out_path = 'cv_ja/cv_ja.docx'
 doc.save(out_path)
