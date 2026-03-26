@@ -1,10 +1,6 @@
 from docx import Document
-from docx.shared import Pt, Cm, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.shared import Pt, Cm
 from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
-import copy
 
 doc = Document()
 
@@ -54,50 +50,34 @@ def add_body(doc, text, indent=0):
     return p
 
 # ─────────────────────────────────────────
-# ヘッダー表
-# ─────────────────────────────────────────
-table = doc.add_table(rows=3, cols=2)
-table.style = 'Table Grid'
-table.alignment = WD_TABLE_ALIGNMENT.LEFT
-
-# 列幅設定
-for row in table.rows:
-    row.cells[0].width = Cm(12)
-    row.cells[1].width = Cm(3)
-
-def cell_text(cell, text, size=11, bold=False, east='游明朝'):
-    p = cell.paragraphs[0]
-    run = p.add_run(text)
-    set_font(run, size=size, bold=bold, east=east)
-
-cell_text(table.cell(0, 0), '准教授　高橋　悠太　TAKAHASHI, Yuta', size=12, bold=True, east='游ゴシック')
-table.cell(0, 1).paragraphs[0].add_run('[写真]')
-
-cell_text(table.cell(1, 0), '研究領域：マクロ経済学')
-cell_text(table.cell(2, 0), '所属部門：大阪大学 社会経済研究所')
-
-# 右列結合
-for r in range(1, 3):
-    table.cell(r, 1).paragraphs[0].add_run('')
-
-doc.add_paragraph()
-
-# ─────────────────────────────────────────
-# 氏名
+# 氏名・肩書き・所属
 # ─────────────────────────────────────────
 add_heading(doc, '【氏名】')
-add_body(doc, '高橋 悠太（たかはし ゆうた / Yuta Takahashi）')
+
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(2)
+run = p.add_run('高橋 悠太（たかはし ゆうた / Yuta Takahashi）')
+set_font(run)
+
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(1)
+run = p.add_run('准教授')
+set_font(run)
+
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(1)
+run = p.add_run('研究領域：マクロ経済学')
+set_font(run)
+
+p = doc.add_paragraph()
+p.paragraph_format.space_after = Pt(1)
+run = p.add_run('所属部門：実証経済部門')
+set_font(run)
 
 # ─────────────────────────────────────────
 # 学歴・職歴
 # ─────────────────────────────────────────
 add_heading(doc, '【学歴・職歴】')
-
-records = [
-    ('1983年 3月', '京都大学 経済学部 卒業（学士（経済学））'),
-    ('1985年 3月', '（実際の年は西暦に合わせて修正）'),  # placeholder
-    # 実際のデータ:
-]
 
 education = [
     ('2009年 3月', '京都大学 経済学部 卒業', '学士（経済学）'),
