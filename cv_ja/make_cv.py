@@ -142,6 +142,11 @@ papers = [
         'with Nobuyuki Hanaki,',
         'Forthcoming at Experimental Economics, 2025.'
     ),
+    (
+        '"Robustly Optimal Voting Rule,"',
+        'with Noriaki Kiguchi and Shinpei Noguchi,',
+        'Forthcoming at Journal of Economic Theory, 2025.'
+    ),
 ]
 
 for i, (title, coauthor, journal) in enumerate(papers, 1):
