@@ -137,7 +137,7 @@ Which produces the following:
 }
 ```
 
-Essentially what is taking place is that the [Plotly attributes](https://plotly.com/javascript/reference/index/) are being taken from the code block as JSON data, parsed, and passed to Plotly along with a theme that matches the current site theme (i.e., a light theme, or a dark theme). This allows all plots that can be described via the `data` attribute to rendered with some limitations for the theme of the plot.
+Essentially what is taking place is that the [Plotly attributes](https://plotly.com/javascript/reference/index/) are being taken from the code block as JSON data, parsed, and passed to Plotly along with the site's chart theme. This allows all plots that can be described via the `data` attribute to rendered with some limitations for the theme of the plot.
 
 ```plotly
 {
