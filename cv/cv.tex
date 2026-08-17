@@ -4,11 +4,13 @@
 % XeLaTeX packages for Unicode support
 \usepackage{fontspec}
 \usepackage{xeCJK}
-% Load the OTF by filename: the "HaranoAjiMincho" family name is not registered
-% with fontconfig in the build image, so a family-name lookup silently falls back
-% to a missing TFM font and drops every CJK glyph.
-\setCJKmainfont{HaranoAjiMincho-Regular.otf}[Scale=0.9]
+% \setmainfont must come FIRST: it resets the CJK family, so calling it after
+% \setCJKmainfont silently reverts CJK text to Latin Modern (which has no kanji).
+% The font is also loaded by filename because the "HaranoAjiMincho" family name
+% is not registered with fontconfig in the build image.
 \setmainfont{Latin Modern Roman}
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}[Scale=0.9]
+\tracinglostchars=3 % TEMPORARY: turn dropped glyphs into visible log warnings
 
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
