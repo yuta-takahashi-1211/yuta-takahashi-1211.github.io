@@ -21,6 +21,12 @@ author_profile: true
 
 ---
 
+## Papers in Japanese:
+- ["Trends in Completed Fertility by Education in Japan: A New Method for Measuring Demographic Indicators Using Japanese Census Microdata"](https://www.rieti.go.jp/jp/publications/dp/26j032.pdf) (2026), with [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html) and [Naoki Takayama](https://www.naoki-takayama.com/) <br>
+*RIETI Discussion Paper 26-J-032.「日本の学歴別完結出生率の動向：国勢調査の個票データを用いた人口指標の新たな計測方法」*
+
+---
+
 ## Works in Progress
 - "Excess Returns of Integrated Government Balance Sheet"
 - "The Corporate Saving Glut in Japan"
@@ -30,6 +36,6 @@ author_profile: true
 
 ---
 
-# Other Publication
+## Other Publication
 - ["A Parsimonious Model for Zero Inflation at the Zero Lower Bound."](https://www.sciencedirect.com/science/article/abs/pii/S0165176524006189) *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)  
   *The order of Figures 1 and 2 should be reversed. Refer to this working paper version for clarification.* [working paper](#)
