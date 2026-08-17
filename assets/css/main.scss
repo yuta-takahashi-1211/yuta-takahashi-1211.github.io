@@ -66,14 +66,15 @@ body {
 }
 
 /* Masthead / Navigation improvements */
+/* Keep the bar the same colour as the page background so there is no visible
+   break above or below it. Using the variable (rather than a fixed colour)
+   keeps the light and dark themes in step. */
 .masthead {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: rgba(238, 238, 238, 0.85) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background: var(--global-bg-color) !important;
+  box-shadow: none;
 
   &::after {
-    background: linear-gradient(90deg, transparent, rgba(0, 146, 202, 0.3), transparent) !important;
+    display: none;
   }
 }
 
