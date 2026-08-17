@@ -4,12 +4,10 @@
 % XeLaTeX packages for Unicode support
 \usepackage{fontspec}
 \usepackage{xeCJK}
-% TEMPORARY DIAGNOSTIC - probe which CJK fonts the build image actually has
-\IfFontExistsTF{HaranoAjiMincho}{\typeout{CJKPROBE: family HaranoAjiMincho FOUND}}{\typeout{CJKPROBE: family HaranoAjiMincho MISSING}}
-\IfFontExistsTF{HaranoAjiMincho-Regular.otf}{\typeout{CJKPROBE: file HaranoAjiMincho-Regular.otf FOUND}}{\typeout{CJKPROBE: file HaranoAjiMincho-Regular.otf MISSING}}
-\IfFontExistsTF{ipaexm.ttf}{\typeout{CJKPROBE: file ipaexm.ttf FOUND}}{\typeout{CJKPROBE: file ipaexm.ttf MISSING}}
-\IfFontExistsTF{NotoSerifCJKjp-Regular.otf}{\typeout{CJKPROBE: file NotoSerifCJKjp-Regular.otf FOUND}}{\typeout{CJKPROBE: file NotoSerifCJKjp-Regular.otf MISSING}}
-\setCJKmainfont{HaranoAjiMincho}[Scale=0.9]
+% Load the OTF by filename: the "HaranoAjiMincho" family name is not registered
+% with fontconfig in the build image, so a family-name lookup silently falls back
+% to a missing TFM font and drops every CJK glyph.
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}[Scale=0.9]
 \setmainfont{Latin Modern Roman}
 
 \usepackage[margin=1in]{geometry}
