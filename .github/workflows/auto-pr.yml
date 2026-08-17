@@ -1,20 +1,85 @@
- permissions:
-   contents: write
-   pull-requests: write
-+  actions: write
-...
-             } catch (mergeError) {
-               ...
-               console.log(`Squash merged PR: #${pr.number}`);
-             }
-+
-+            // Merging with GITHUB_TOKEN doesn't fire the push event that
-+            // pages.yml listens for, so the Pages build has to be kicked
-+            // off explicitly via workflow_dispatch.
-+            await github.rest.actions.createWorkflowDispatch({
-+              owner: context.repo.owner,
-+              repo: context.repo.repo,
-+              workflow_id: 'pages.yml',
-+              ref: defaultBranch,
-+            });
-+            console.log(`Dispatched pages.yml on ${defaultBranch}`);
+name: Auto PR and Merge
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  auto-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create PR and auto-merge
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = context.ref.replace('refs/heads/', '');
+            const defaultBranch = context.payload.repository.default_branch;
+
+            // Check if PR already exists for this branch
+            const { data: existingPRs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:${branch}`,
+              state: 'open',
+            });
+
+            let pr;
+            if (existingPRs.length > 0) {
+              pr = existingPRs[0];
+              console.log(`PR already exists: #${pr.number}`);
+            } else {
+              // Create PR
+              const { data: newPR } = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `${branch}`,
+                head: branch,
+                base: defaultBranch,
+                body: `Auto-generated PR from branch \`${branch}\``,
+              });
+              pr = newPR;
+              console.log(`Created PR: #${pr.number}`);
+            }
+
+            // Wait a moment for PR to be ready
+            await new Promise(resolve => setTimeout(resolve, 3000));
+
+            // Merge PR
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'merge',
+              });
+              console.log(`Merged PR: #${pr.number}`);
+            } catch (mergeError) {
+              console.log(`Merge failed with 'merge', trying 'squash'...`);
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                merge_method: 'squash',
+              });
+              console.log(`Squash merged PR: #${pr.number}`);
+            }
+
+            // Merging with GITHUB_TOKEN doesn't fire the push event that
+            // pages.yml listens for, so the Pages build has to be kicked
+            // off explicitly via workflow_dispatch.
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: defaultBranch,
+            });
+            console.log(`Dispatched pages.yml on ${defaultBranch}`);
