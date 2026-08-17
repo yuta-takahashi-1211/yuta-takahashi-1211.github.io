@@ -42,6 +42,18 @@
 ;
 
 
+/* ==========================================================================
+   COLOUR PALETTE — Japanese traditional colours (日本の伝統色)
+   Change these six values to re-colour the whole site.
+   ========================================================================== */
+
+$ai                 : #165E83; // 藍色     — primary accent
+$ai-light           : #2E86AB; // 縹色     — lighter partner for gradients
+$ai-link            : #16597C; // 藍色     — body link text
+$koi-ai             : #0F2540; // 濃藍     — headings, site title
+$fukamidori         : #00552E; // 深緑     — section underline
+$tokiwa             : #007B43; // 常磐色   — section underline, lighter end
+
 /* フッターを完全に非表示（マークアップは残る） */
 footer.page__footer,  /* Minimal Mistakes 系 */
 .page__footer,
@@ -98,7 +110,7 @@ body {
         left: 0;
         width: 0;
         height: 2px;
-        background: linear-gradient(90deg, #0092ca, #00b4d8);
+        background: linear-gradient(90deg, $ai, $ai-light);
         transition: width 0.3s ease;
         border-radius: 2px;
       }
@@ -109,7 +121,7 @@ body {
       }
 
       &:hover {
-        color: #0092ca !important;
+        color: $ai !important;
       }
     }
   }
@@ -118,7 +130,7 @@ body {
 .site-title {
   font-weight: 700 !important;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #222831, #0092ca);
+  background: linear-gradient(135deg, $koi-ai, $ai);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,12 +140,12 @@ body {
 .author__avatar {
   img {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0 4px 20px rgba(0, 146, 202, 0.15);
-    border: 3px solid rgba(0, 146, 202, 0.2) !important;
+    box-shadow: 0 4px 20px rgba($ai, 0.15);
+    border: 3px solid rgba($ai, 0.2) !important;
 
     &:hover {
       transform: scale(1.03);
-      box-shadow: 0 8px 30px rgba(0, 146, 202, 0.25);
+      box-shadow: 0 8px 30px rgba($ai, 0.25);
     }
   }
 }
@@ -156,9 +168,9 @@ body {
     margin: 2px 0;
 
     &:hover {
-      background: rgba(0, 146, 202, 0.08);
+      background: rgba($ai, 0.08);
       text-decoration: none !important;
-      color: #0092ca !important;
+      color: $ai !important;
       transform: translateX(3px);
     }
   }
@@ -173,7 +185,7 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     letter-spacing: -0.02em;
-    color: #1a1a2e;
+    color: $koi-ai;
   }
 
   h2 {
@@ -181,6 +193,8 @@ body {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 
+    /* Section underline is deep green, deliberately contrasting the indigo
+       used everywhere else. */
     &::after {
       content: '';
       position: absolute;
@@ -188,7 +202,7 @@ body {
       left: 0;
       width: 50px;
       height: 3px;
-      background: linear-gradient(90deg, #0092ca, #00b4d8);
+      background: linear-gradient(90deg, $fukamidori, $tokiwa);
       border-radius: 3px;
     }
   }
@@ -199,14 +213,14 @@ body {
   }
 
   a:not(.btn) {
-    color: #0077b6;
+    color: $ai-link;
     text-decoration: none;
-    border-bottom: 1px solid rgba(0, 119, 182, 0.3);
+    border-bottom: 1px solid rgba($ai-link, 0.3);
     transition: all 0.25s ease;
 
     &:hover {
-      color: #0092ca;
-      border-bottom-color: #0092ca;
+      color: $ai;
+      border-bottom-color: $ai;
     }
   }
 }
@@ -221,11 +235,11 @@ body {
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 146, 202, 0.3);
+    box-shadow: 0 4px 15px rgba($ai, 0.3);
   }
 
   &--primary {
-    background: linear-gradient(135deg, #0092ca, #00b4d8);
+    background: linear-gradient(135deg, $ai, $ai-light);
     border: none;
   }
 }
@@ -238,7 +252,7 @@ body {
 
   &:hover {
     transform: translateY(-3px);
-    background: rgba(0, 146, 202, 0.03);
+    background: rgba($ai, 0.03);
   }
 
   &-title {
@@ -249,7 +263,7 @@ body {
       transition: color 0.25s ease;
 
       &:hover {
-        color: #0092ca !important;
+        color: $ai !important;
       }
     }
   }
@@ -257,8 +271,8 @@ body {
 
 /* Selection color */
 ::selection {
-  background: rgba(0, 146, 202, 0.2);
-  color: #1a1a2e;
+  background: rgba($ai, 0.2);
+  color: $koi-ai;
 }
 
 /* Smooth scrolling */
@@ -269,7 +283,7 @@ html {
 /* Focus states for accessibility */
 a:focus,
 button:focus {
-  outline: 2px solid rgba(0, 146, 202, 0.5);
+  outline: 2px solid rgba($ai, 0.5);
   outline-offset: 2px;
 }
 
