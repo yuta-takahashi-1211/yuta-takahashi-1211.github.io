@@ -39,4 +39,4 @@ author_profile: true
 
 ## Other Publication
 - ["A Parsimonious Model for Zero Inflation at the Zero Lower Bound."](https://www.sciencedirect.com/science/article/abs/pii/S0165176524006189) *Economics Letters* 02/2025, Volume 247, with [Naoki Takayama](#)  
-  *The order of Figures 1 and 2 should be reversed. Refer to this working paper version for clarification.* [working paper](#)
+  <small>*The order of Figures 1 and 2 should be reversed. Refer to [this working paper version](#) for clarification.*</small>
