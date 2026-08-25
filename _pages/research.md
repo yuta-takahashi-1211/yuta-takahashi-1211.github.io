@@ -6,10 +6,8 @@ author_profile: true
 ---
 ## Published Papers:
 - ["Universal Gravity"](https://www.journals.uchicago.edu/doi/abs/10.1086/704385?af=R&mobileUi=0) — *Journal of Political Economy* (2020), with [Treb Allen](https://sites.google.com/site/treballen/home?authuser=0) and [Costas Arkolakis](https://arkolakis.com/)
-- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.dropbox.com/home/dynamicBeautyContestAnalysis/web) (2026), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) <br>
-*(Forthcoming at Experimental Economics)*
-- ["Robustly Optimal Voting Rule"](https://www.sciencedirect.com/science/article/pii/S0022053126000827) (2026), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home) <br>
-*(Forthcoming at Journal of Economic Theory)*
+- ["An Experiment on a Multi-Period Beauty Contest Game"](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/69CBD2DA83032DCB312190966C384B04/S1386415726100489a.pdf/an-experiment-on-a-multi-period-beauty-contest-game.pdf) — *Experimental Economics* (2025), with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home)
+- ["Robustly Optimal Voting Rule"](https://www.sciencedirect.com/science/article/pii/S0022053126000827) — *Journal of Economic Theory* (2026), with [Noriaki Kiguchi](https://sites.google.com/view/noriaki-kiguchi/home/) and [Shinpei Noguchi](https://sites.google.com/view/shinpeinoguchi/home)
 
 ---
 

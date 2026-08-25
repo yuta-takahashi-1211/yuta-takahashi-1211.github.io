@@ -140,12 +140,12 @@ papers = [
     (
         '"An Experiment on a Multi-Period Beauty Contest Game,"',
         'with Nobuyuki Hanaki,',
-        'Forthcoming at Experimental Economics, 2026.'
+        'Experimental Economics, 28(6): 1214–1239, November 2025.'
     ),
     (
         '"Robustly Optimal Voting Rule,"',
         'with Noriaki Kiguchi and Shinpei Noguchi,',
-        'Forthcoming at Journal of Economic Theory, 2026.'
+        'Journal of Economic Theory, Volume 236, Article 106219, 2026.'
     ),
 ]
 
