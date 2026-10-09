@@ -194,9 +194,10 @@ body {
       color: #fff !important;
       font-size: $type-size-6;
       text-align: center;
+      background: $ai; /* solid, no gradient */
 
       &:hover {
-        background: linear-gradient(135deg, $ai, $ai-light);
+        background: darken($ai, 6%);
         color: #fff !important;
         transform: translateY(-2px);
       }
