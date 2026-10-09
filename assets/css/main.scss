@@ -182,13 +182,14 @@ body {
   /* CV buttons (English / Japanese) under the location line. These override
      the plain-link styling above so they keep the .btn--primary look. */
   .author__cv {
-    display: flex;
-    flex-wrap: wrap;
+    /* Stacked vertically; inline-flex shrinks the column to the wider
+       button so both buttons share the same width. */
+    display: inline-flex;
+    flex-direction: column;
     gap: 6px;
     margin: 6px 0 8px;
 
     a.btn {
-      flex: 1 1 auto;
       margin: 0;
       padding: 5px 10px !important;
       color: #fff !important;
