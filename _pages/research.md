@@ -22,6 +22,8 @@ author_profile: true
 ## Papers in Japanese:
 - ["Trends in Completed Fertility by Educational Attainment in Japan: A New Method for Measuring Demographic Outcomes Using Population Census Microdata"](https://www.rieti.go.jp/jp/publications/dp/26j032.pdf) (2026), with [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html) and [Naoki Takayama](https://www.naoki-takayama.com/) <br>
   <small>*"日本の学歴別完結出生率の動向：国勢調査の個票データを用いた人口指標の新たな計測方法" RIETI Discussion Paper 26-J-032. We are preparing an English version with expanded analysis.*</small>
+- ["Has Intensive Parenting Spread in Japan? A Cohort Analysis of Parental Time and Expenditure on Children"](https://www.rieti.go.jp/jp/publications/summary/26100004.html) (2026), with [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html) and [Naoki Takayama](https://www.naoki-takayama.com/) <br>
+  <small>*"日本で徹底的な子育ては広がったのか：育児時間と育児費用のコーホート分析" RIETI Discussion Paper 26-J-040.*</small>
 
 ---
 
