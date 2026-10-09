@@ -178,6 +178,30 @@ body {
   .icon-only a:hover {
     transform: scale(1.1);
   }
+
+  /* CV buttons (English / Japanese) under the location line. These override
+     the plain-link styling above so they keep the .btn--primary look. */
+  .author__cv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0 8px;
+
+    a.btn {
+      flex: 1 1 auto;
+      margin: 0;
+      padding: 5px 10px !important;
+      color: #fff !important;
+      font-size: $type-size-6;
+      text-align: center;
+
+      &:hover {
+        background: linear-gradient(135deg, $ai, $ai-light);
+        color: #fff !important;
+        transform: translateY(-2px);
+      }
+    }
+  }
 }
 
 /* Page content improvements */
