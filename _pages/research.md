@@ -28,6 +28,7 @@ author_profile: true
 ---
 
 ## Works in Progress
+- "A Limit on Monetary Policy: Theory and Experimental Evidence", with [Nobuyuki Hanaki](https://sites.google.com/view/nhanaki/home) and [Naoki Takayama](https://www.naoki-takayama.com/) [[Slides](https://www.dropbox.com/scl/fo/jg2dzk3on59iq9uyswiua/APgkYBD0CcthIPk5T-uvduM?rlkey=50lw6u7z5xm7vx2mjvr52ozy6&dl=0)]
 - "Excess Returns of Integrated Government Balance Sheet"
 - "The Corporate Saving Glut in Japan"
 - "The Real Macroeconomics of Japanese Stagnation"
