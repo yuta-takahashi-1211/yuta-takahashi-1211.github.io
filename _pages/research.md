@@ -12,6 +12,7 @@ author_profile: true
 ---
 
 ## Working Papers:
+- ["How Much Do Rising Educational Attainment, Never-Marriage, and Childlessness Explain Japan’s Fertility Decline?"](https://www.dropbox.com/scl/fo/yji201ey793k16w1leie8/AG4f-D32Lc7hY6p2cm8YgdU?rlkey=nlbw3enw1fel2bb2zkxm0ydgj&dl=0) (2026), with [Naoki Takayama](https://www.naoki-takayama.com/) and [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html)
 - ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"](https://www.dropbox.com/scl/fo/03hun5pxioram7n6te16p/AP5nKTLL343b3KRFzU191-g?rlkey=8hu4n5kn9h8p80z20teyjeq23&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Hidden Stagflation"](https://www.dropbox.com/home/bad_inflation/web) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
@@ -21,7 +22,7 @@ author_profile: true
 
 ## Papers in Japanese:
 - ["Trends in Completed Fertility by Educational Attainment in Japan: A New Method for Measuring Demographic Outcomes Using Population Census Microdata"](https://www.rieti.go.jp/jp/publications/dp/26j032.pdf) (2026), with [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html) and [Naoki Takayama](https://www.naoki-takayama.com/) <br>
-  <small>*"日本の学歴別完結出生率の動向：国勢調査の個票データを用いた人口指標の新たな計測方法" RIETI Discussion Paper 26-J-032. We are preparing an English version with expanded analysis.*</small>
+  <small>*"日本の学歴別完結出生率の動向：国勢調査の個票データを用いた人口指標の新たな計測方法" RIETI Discussion Paper 26-J-032. See ["How Much Do Rising Educational Attainment, Never-Marriage, and Childlessness Explain Japan’s Fertility Decline?"](https://www.dropbox.com/scl/fo/yji201ey793k16w1leie8/AG4f-D32Lc7hY6p2cm8YgdU?rlkey=nlbw3enw1fel2bb2zkxm0ydgj&dl=0) for the expanded analysis written in English.*</small>
 - ["Has Intensive Parenting Spread in Japan? A Cohort Analysis of Parental Time and Expenditure on Children"](https://www.rieti.go.jp/jp/publications/summary/26100004.html) (2026), with [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html) and [Naoki Takayama](https://www.naoki-takayama.com/) <br>
   <small>*"日本で徹底的な子育ては広がったのか：育児時間と育児費用のコーホート分析" RIETI Discussion Paper 26-J-040.*<br>*The empirical results of this paper will be subsumed into our paper on a structural analysis of fertility decline.*</small>
 
