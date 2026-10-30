@@ -12,7 +12,7 @@ author_profile: true
 ---
 
 ## Working Papers:
-- ["The Race between Political Power and Economic Growth: A Political Theory of Capital Taxation"](https://www.dropbox.com/scl/fo/lpe1b96jwkvoy7f5oom7z/AB1Xm1n4D3OoZcKx9naaQAs?rlkey=n336gi7yfty9wt97xmp3kubtd&dl=0) (2026), with Ryo Arawatari and [Naoki Takayama](https://www.naoki-takayama.com/)
+- ["The Race between Political Power and Economic Growth: A Political Theory of Capital Taxation"](https://www.dropbox.com/scl/fo/lpe1b96jwkvoy7f5oom7z/AB1Xm1n4D3OoZcKx9naaQAs?rlkey=n336gi7yfty9wt97xmp3kubtd&dl=0) (2026), with [Ryo Arawatari](https://sites.google.com/view/ryo-arawatari/) and [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Accounting for Japan’s Fertility Decline: Education, Marriage, and Childbearing"](https://www.dropbox.com/scl/fo/yji201ey793k16w1leie8/AG4f-D32Lc7hY6p2cm8YgdU?rlkey=nlbw3enw1fel2bb2zkxm0ydgj&dl=0) (2026), with [Naoki Takayama](https://www.naoki-takayama.com/) and [Takashi Unayama](https://www.unayama.kier.kyoto-u.ac.jp/index_E.html)
 - ["Does Expected Inflation Matter? Evidence from Japanese Value-Added Tax Hikes"](https://www.dropbox.com/scl/fo/03hun5pxioram7n6te16p/AP5nKTLL343b3KRFzU191-g?rlkey=8hu4n5kn9h8p80z20teyjeq23&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
 - ["Global Technology Stagnation"](https://www.dropbox.com/scl/fo/03uqcl1l6suag1uxbw4uo/h?rlkey=oirzggqtv7ol6q75ae1r66mie&dl=0) (2024), with [Naoki Takayama](https://www.naoki-takayama.com/)
