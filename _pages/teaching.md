@@ -16,7 +16,7 @@ author_profile: true
 - Equilibrium interest rate
 - Equilibrium wage
 - Infinite-horizon optimization: sequential and dynamic programming approaches
-- Exogenous growth
-- Endogenous growth
+- Exogenous growth models, including investment-specific technological change
+- Endogenous growth models: fully endogenous and semi-endogenous growth
 - Population aging and economic growth
 - Macro-finance trends: market power, intangibles, and risk premia
