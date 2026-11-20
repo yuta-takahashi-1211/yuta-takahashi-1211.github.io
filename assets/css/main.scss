@@ -13,7 +13,9 @@
 
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    /* The dark theme is intentionally not imported: the site always renders
+       in light mode, even when the visitor's OS is set to dark mode. The
+       custom colours below are designed for a light background only. */
 
     "include/mixins",
     "vendor/susy/susy",
@@ -301,9 +303,10 @@ body {
   color: $koi-ai;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling; keep browser UI (scrollbars, form controls) light too */
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 /* Focus states for accessibility */
